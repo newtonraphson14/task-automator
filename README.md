@@ -1,6 +1,6 @@
 # ⚡ Cloud Task Automator
 
-Enterprise workflow automation system with Azure Functions and modern dashboard.
+Workflow automation system with Azure Functions and modern dashboard.
 
 ## 🚀 Features
 - 📨 Webhook Receiver - Process incoming triggers
