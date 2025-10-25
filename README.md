@@ -29,3 +29,6 @@ npx live-server
 ```
 
 ☁️ Deploy to Azure
+```bash
+Not yet
+```
