@@ -27,8 +27,3 @@ func start
 cd frontend
 npx live-server
 ```
-
-☁️ Deploy to Azure
-```bash
-Not yet
-```
