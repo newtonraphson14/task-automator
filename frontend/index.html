@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡ Cloud Task Automator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚡ Cloud Task Automator</h1>
+            <p>Manage your automated workflows in real-time</p>
+        </header>
+
+        <!-- Stats Dashboard -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" id="totalExecutions">0</div>
+                <div class="stat-label">Total Executions</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="successRate">100%</div>
+                <div class="stat-label">Success Rate</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="activeWorkflows">3</div>
+                <div class="stat-label">Active Workflows</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="lastUpdated">Just now</div>
+                <div class="stat-label">Last Updated</div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="actions-section">
+            <h2>🚀 Quick Actions</h2>
+            <div class="action-buttons">
+                <button class="btn btn-primary" onclick="testWebhook()">Test Webhook</button>
+                <button class="btn btn-secondary" onclick="testDataSync()">Test Data Sync</button>
+                <button class="btn btn-warning" onclick="testNotification()">Test Notification</button>
+                <button class="btn btn-info" onclick="runFullPipeline()">Run Full Pipeline</button>
+            </div>
+        </div>
+
+        <!-- Execution Logs -->
+        <div class="logs-section">
+            <h2>📊 Execution Logs</h2>
+            <div class="logs-header">
+                <span>Real-time automation logs</span>
+                <button class="btn btn-outline" onclick="clearLogs()">Clear Logs</button>
+            </div>
+            <div id="logsContainer" class="logs-container">
+                <!-- Logs will appear here -->
+            </div>
+        </div>
+
+        <!-- Workflow Builder -->
+        <div class="workflow-section">
+            <h2>🔧 Workflow Builder</h2>
+            <div class="workflow-form">
+                <div class="form-group">
+                    <label>Workflow Name</label>
+                    <input type="text" id="workflowName" placeholder="My Automation Workflow">
+                </div>
+                <div class="form-group">
+                    <label>Trigger Type</label>
+                    <select id="triggerType">
+                        <option value="webhook">Webhook</option>
+                        <option value="schedule">Schedule</option>
+                        <option value="manual">Manual</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Actions</label>
+                    <select id="actions" multiple>
+                        <option value="process">Process Data</option>
+                        <option value="sync">Sync to Database</option>
+                        <option value="notify">Send Notification</option>
+                    </select>
+                </div>
+                <button class="btn btn-success" onclick="createWorkflow()">Create Workflow</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
