@@ -11,7 +11,7 @@ Workflow automation system with Azure Functions and modern dashboard.
 
 ## 🛠️ Tech Stack
 - Azure Functions (Node.js)
-- HTML5/CSS3/JavaScript
+- HTML/CSS/JavaScript
 - REST API Architecture
 - Real-time Monitoring
 
